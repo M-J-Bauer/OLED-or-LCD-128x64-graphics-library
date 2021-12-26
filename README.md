@@ -30,63 +30,7 @@ Functions to draw lines (other than horizontal or vertical) or other shapes, e.g
 ellipses, etc, are *not* included in this library, but C-code algorithms for such shapes can be
 found easily on the web if needed for your application.
 
-Here is a synopsis of MJB's LCD/OLED graphics library:
+A synopsis of MJB's LCD/OLED graphics functions may be found in file: "LCD_Graphics_Lib.h".
 
-//---------- Controller low-level functions, defined in driver module -------------------
-//
-extern  bool  LCD_Init(void);      // LCD controller initialisation
-extern  void  LCD_ClearGDRAM();
-extern  void  LCD_WriteBlock(uint16 *scnBuf, uint16 x, uint16 y, uint16 w, uint16 h);
-
-//---------- LCD function & macro library (API) -----------------------------------------
-//
-void    LCD_ClearScreen(void);            // Clear LCD GDRAM and MCU RAM buffers
-void    LCD_Mode(uint8 mode);             // Set pixel write mode (set, clear, flip)
-void    LCD_PosXY(uint16 x, uint16 y);    // Set graphics cursor position to (x, y)
-uint16  LCD_GetX(void);                   // Get cursor pos x-coord
-uint16  LCD_GetY(void);                   // Get cursor pos y-coord
-void    LCD_SetFont(uint8 font_ID);       // Set font for char or text display
-uint8   LCD_GetFont();                    // Get current font ID
-void    LCD_PutChar(char uc);             // Show ASCII char at (x, y)
-void    LCD_PutText(char *str);           // Show text string at (x, y)
-void    LCD_PutDigit(uint8 bDat);         // Show hex/decimal digit value (1 char)
-void    LCD_PutHexByte(uint8 bDat);       // Show hexadecimal byte value (2 chars)
-
-void    LCD_PutDecimalWord(uint16 val, uint8 fieldSize);  // Show uint16 in decimal
-void    LCD_BlockFill(uint16 w, uint16 h);   // Fill area, w x h pixels, at cursor (x, y)
-uint8   LCD_PutImage(bitmap_t *image, uint16 w, uint16 h);  // Show bitmap image at (x, y)
-uint16 *LCD_ScreenCapture();              // Return a pointer to the screen buffer
-
-// These macros draw various objects at the current graphics cursor position...
-#define LCD_PutPixel()           LCD_BlockFill(1, 1)
-#define LCD_DrawBar(w, h)        LCD_BlockFill(w, h)
-#define LCD_DrawLineHoriz(len)   LCD_BlockFill(len, 1)
-#define LCD_DrawLineVert(len)    LCD_BlockFill(1, len)
-
-//---------- Aliases for OLED (or other 128 x 64 pixel display) ----------------------------
-//
-#define Disp_GetMaxX()      (127)                   // Screen width, pixels
-#define Disp_GetMaxY()      (63)                    // Screen height, pixels
-#define Disp_Init()         LCD_Init()              // Controller initialisation
-#define Disp_ClearScreen()  LCD_ClearScreen()       // Clear GDRAM and MCU RAM buffers
-#define Disp_Mode(mode)     LCD_Mode(mode)          // Set pixel write mode (set, clear, flip)
-#define Disp_PosXY(x, y)    LCD_PosXY(x, y)         // Set graphics cursor position
-#define Disp_GetX()         LCD_GetX()              // Get cursor pos'n x-coord
-#define Disp_GetY()         LCD_GetY()              // Get cursor pos'n y-coord
-#define Disp_SetFont(font)  LCD_SetFont(font)       // Set font for text
-#define Disp_GetFont()      LCD_GetFont()           // Get current font ID
-#define Disp_PutChar(c)     LCD_PutChar(c)          // Show ASCII char at (x, y)
-#define Disp_PutText(s)     LCD_PutText(s)          // Show text string at (x, y)
-#define Disp_PutDigit(d)    LCD_PutDigit(d)         // Show hex/decimal digit (1 char)
-#define Disp_PutHexByte(h)  LCD_PutHexByte(h)       // Show hexadecimal byte (2 chars)
-
-#define Disp_PutDecimal(w, n)     LCD_PutDecimalWord(w, n)  // Show uint16 in decimal (n places)
-#define Disp_BlockFill(w, h)      LCD_BlockFill(w, h)       // Fill area w x h pixels at (x, y)
-#define Disp_PutImage(img, w, h)  LCD_PutImage(img, w, h)   // Show bitmap image at (x, y)
-#define Disp_ScreenCapture()      LCD_ScreenCapture()       // Return a pointer to the screen buffer
-
-#define Disp_PutPixel()           LCD_BlockFill(1, 1)
-#define Disp_DrawBar(w, h)        LCD_BlockFill(w, h)
-#define Disp_DrawLineHoriz(len)   LCD_BlockFill(len, 1)
-#define Disp_DrawLineVert(len)    LCD_BlockFill(1, len)
-
+There is a version of this library (source code) already adapted for the Arduino IDE. This may be
+found in a separate GitHub repository.

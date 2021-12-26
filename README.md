@@ -5,18 +5,17 @@ This repository contains a suite of C functions intended for embedded microcontr
 using a monochrome graphics LCD or OLED display module with 128(h) x 64(v) pixels.
 
 Low-level driver functions are provided to support display modules with these controller devices:
-ST7920 (LCD), KS0108/KS0109 (LCD), SH1106 (OLED, IIC).  Drivers are customized for Microchip PIC32
-and Teensy 3.x microcontroller devices. The Teensy 3.x driver was developed and tested using the
-Arduino IDE with "Teensyduino" library installed.
+ST7920 (LCD), KS0107/KS0108 (LCD), SH1106 (OLED, IIC).  Drivers are customized for Microchip PIC32
+MCU devices, but may be easily adapted to other platforms.
 
 A test & demo program is provided to run on a PIC32 MCU target. The program was built and tested
-under MPLAB.X IDE v5.45 (XC-32 compiler v2.50, free version).  The project is configured to use an
+under MPLAB.X IDE v5.45 (XC-32 compiler v2.50, free version). The project is configured to use an
 OLED display module with SH1106 controller and IIC (I2C/TWI) connection to the microcontroller.
 The project can be easily adapted to use an alternative display module simply by swapping the
 driver code module to suit the required devices.
 
 This graphics library uses a RAM buffer of size 1024 bytes in the microcontroller. Using a buffer
-maximizes the update speed of display operations.
+maximizes the speed of display update operations.
 
 Functions are provided to display text in various font sizes, e.g. 8, 12, 16 and 24 pixels, some
 mono-spaced and others proportionally spaced. Some fonts allow bold type also. The font size

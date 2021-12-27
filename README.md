@@ -32,5 +32,9 @@ found easily on the web if needed for your application.
 
 A synopsis of MJB's LCD/OLED graphics functions may be found in file: "LCD_Graphics_Lib.h".
 
-There is a version of this library (source code) already adapted for the Arduino IDE. This may be
-found in a separate GitHub repository.
+_Arduino version:_
+
+There is a version of this library (source code) adapted for the Arduino IDE. This will be
+placed in a separate GitHub repository shortly. (Meanwhile, it's simply a matter of replacing the
+PIC32 I2C function calls with equivalent functions from the Arduino "Wire" (I2C) library.)
+

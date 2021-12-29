@@ -35,7 +35,5 @@ A synopsis of MJB's LCD/OLED graphics functions may be found in file: "LCD_Graph
 _Arduino version:_
 
 There is a version of this library already adapted to drive a 1.3" OLED display module (SH1106 controller)
-under the Arduino IDE. Source code for the library will be placed in a separate GitHub repository shortly. 
-(It's simply a matter of replacing the PIC32 I2C function calls in the SH1106 driver code with 
-equivalent functions from the Arduino "Wire" (I2C) library.)
+for Arduino projects, here: https://github.com/M-J-Bauer/OLED-Display-1.3-128x64-I2C-Graphics-Library---Arduino
 

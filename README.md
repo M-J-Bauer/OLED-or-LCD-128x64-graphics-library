@@ -18,7 +18,7 @@ This graphics library uses a RAM buffer of size 1024 bytes in the microcontrolle
 maximizes the speed of display update operations.
 
 Functions are provided to display text in various font sizes, e.g. 8, 12, 16 and 24 pixels, some
-mono-spaced and others proportionally spaced. Some fonts allow bold type also. The font size
+mono-spaced and others proportionally spaced. Some fonts support bold weight. The font size
 includes lower-case descenders. Upper-case letters are 7, 10, 14 and 20 pixels (resp.) in height.
 
 A function, LCD_PutImage(), displays a bitmap image of any arbitrary size (w x h) at the current
@@ -28,7 +28,7 @@ bar, using the same function, LCD_BlockFill().
 
 Functions to draw lines (other than horizontal or vertical) or other shapes, e.g. polygons, circles,
 ellipses, etc, are *not* included in this library, but C-code algorithms for such shapes can be
-found easily on the web if needed for your application.
+found on the web if needed for your application.
 
 A synopsis of MJB's LCD/OLED graphics functions may be found in file: "LCD_Graphics_Lib.h".
 

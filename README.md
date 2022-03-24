@@ -1,4 +1,4 @@
-# OLED-LCD-128x64-graphics-library
+# OLED or LCD 128x64px graphics library
 C function library for OLED or LCD monochrome graphics module, 128 x 64 pixels
 
 This repository contains a suite of C functions intended for embedded microcontroller applications
@@ -32,7 +32,7 @@ found on the web if needed for your application.
 
 A synopsis of MJB's LCD/OLED graphics functions may be found in file: "LCD_Graphics_Lib.h".
 
-_Arduino version:_
+#_Arduino version:_
 
 There is a version of this library already adapted to drive a 1.3" OLED display module (SH1106 controller)
 for Arduino projects, here: https://github.com/M-J-Bauer/OLED-Display-1.3-128x64-I2C-Graphics-Library---Arduino

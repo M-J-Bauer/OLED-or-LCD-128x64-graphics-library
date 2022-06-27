@@ -27,8 +27,6 @@
 #define SET_PIXELS            1
 #define FLIP_PIXELS           2
 
-//#define SUPPORT_12PT_AND_24PT_FONTS    // Maybe someday! - MJB
-
 // Character font styles;  size is cell height in pixels.
 // Use one of the font names defined here as the arg value in function: LCD_SetFont(arg).
 // Note:  Font size 16 is monospace only -- N/A in proportional spacing.

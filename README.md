@@ -32,8 +32,9 @@ found on the web if needed for your application.
 
 A synopsis of MJB's LCD/OLED graphics functions may be found in file: "LCD_Graphics_Lib.h".
 
-#_Arduino version:_
+_AVR8 version:_
 
-There is a version of this library already adapted to drive a 1.3" OLED display module (SH1106 controller)
-for Arduino projects, here: https://github.com/M-J-Bauer/OLED-Display-1.3-128x64-I2C-Graphics-Library---Arduino
+There is a version of this library already adapted to drive an I2C OLED display module (SH1106 controller)
+on 8-bit AVR microcontroller devices, suitable for applications to be developed under Arduino IDE or 
+Microchip/Atmel Studio (IDE) for AVR and SAM Devices.
 

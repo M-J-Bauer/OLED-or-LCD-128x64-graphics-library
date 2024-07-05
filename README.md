@@ -32,7 +32,7 @@ found on the web if needed for your application.
 
 A synopsis of MJB's LCD/OLED graphics functions may be found in file: "LCD_Graphics_Lib.h".
 
-#_AVR8 version:_
+# AVR8 version:
 
 There is another version of this library already adapted to run on 8-bit AVR microcontroller devices
 driving an I2C OLED display (with SH1106 controller). The library is suitable for applications being

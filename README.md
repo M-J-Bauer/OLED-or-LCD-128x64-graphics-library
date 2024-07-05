@@ -1,4 +1,4 @@
-# OLED or LCD 128x64px graphics library
+# OLED or LCD 128x64px graphics library - PIC32 target
 C function library for OLED or LCD monochrome graphics module, 128 x 64 pixels
 
 This repository contains a suite of C functions intended for embedded microcontroller applications
